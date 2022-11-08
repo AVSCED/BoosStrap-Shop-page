@@ -104,7 +104,7 @@
     </div>
 
     <div class="page_Content">
-      <!-- Secod Navbar -->
+      <!-- Second Navbar -->
       <ul class="nav justify-content-center fw-bold m-2 p-2">
         <li class="nav-item">
           <a class="nav-link text-secondary" aria-current="page" href="#"
@@ -413,97 +413,94 @@
               </div>
             </div>
 
-            <div class="container bg-danger">
+            <div class="col bg-danger">
               <div
-                id="carouselExampleControls"
-                class="carousel slide p-4 m-2"
+                id="fetured"
+                class="carousel slide container"
                 data-bs-ride="carousel"
               >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="radio"
+                    data-bs-target="#fetured"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="radio"
+                    data-bs-target="#fetured"
+                    data-bs-slide-to="1"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="carousel-item active">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-5 p-1">
                         <img
                           src="./assets/image/dragons.jpeg"
-                          class="d-block"
-                          style="width: 20rem; height: 26rem; margin-left: 5rem"
-                          alt="..."
+                          style="height: 29rem"
                         />
                       </div>
-                    </div>
-                    <div class="col-8">
-                      <div class="carousel-caption">
-                        <span
-                          class="btn bg-white text-dark text-muted p-1"
-                          style="border-radius: 5rem"
-                          >Science Fiction</span
-                        >
-                        <p class="fs-1">The History of Phipino</p>
+                      <div class="col-lg-7"> 
+                        <h4 class="featuredTitle fw-bolder fs-2 p-0 ms-1 mb-0 mt-4 text-wrap text-white">
+                          The Rage of Dragons
+                        </h4>
+                        <p class="text-white text-sm ms-1 mb-lg-5">
+                          By Evan Winters
+                        </p>
+                        <h2 class="text-white mt-4 ms-1 fs-1">$50</h2>
+                        <p class="text-white text-sm ms-1">
+                          <i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-fill"></i
+                          ><i class="bi bi-star-half"></i>
+                        </p>
                         <button
-                          class="btn btn-danger text-white"
-                          style="border-radius: 5rem"
-                          type="submit"
+                          class="btn btn-lg btn-outline-light mb-2"
+                          style="border-radius: 25px"
                         >
-                          <b>Browse Store</b>
+                          View Details
                         </button>
                       </div>
                     </div>
                   </div>
-
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="carousel-item">
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-5 p-1">
                         <img
                           src="./assets/image/dragons.jpeg"
-                          class="d-block"
-                          style="width: 20rem; height: 26rem; margin-left: 5rem"
-                          alt="..."
+                          style="height: 29rem"
                         />
                       </div>
-                      <div class="col-8">
-                        <div class="carousel-caption">
-                          <span
-                            class="btn bg-white text-dark text-muted p-1"
-                            style="border-radius: 5rem"
-                            >Science Fiction</span
-                          >
-                          <p class="fs-1">The History of Phipino</p>
-                          <button
-                            class="btn btn-danger text-white"
-                            style="border-radius: 5rem"
-                            type="submit"
-                          >
-                            <b>Browse Store</b>
-                          </button>
-                        </div>
+                      <div class="col-lg-7">
+                        <p class="featuredTitle fw-bolder fs-2 p-0 ms-1 mb-0 mt-4 text-wrap text-white">
+                          The Rage of Dragons
+                        </p>
+                        <p class="text-white text-sm ms-1 mb-lg-5">
+                          By Evan Winters
+                        </p>
+                        <h2 class="text-white mt-4 ms-1 fs-1">$50</h2>
+                        <p class="text-white text-sm ms-1">
+                          <i class="bi bi-star-fill bg-danger"></i>
+                          <i class="bi bi-star-fill bg-danger"></i
+                          ><i class="bi bi-star-fill bg-danger"></i
+                          ><i class="bi bi-star-fill bg-danger"></i
+                          ><i class="bi bi-star-half bg-danger"></i>
+                        </p>
+                        <button
+                          class="btn btn-lg btn-outline-light mb-2"
+                          style="border-radius: 25px"
+                        >
+                          View Details
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleControls"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
           </div>
@@ -891,7 +888,7 @@
           </div>
         </div>
       </div>
-      <p class="text-center m-5 p-5">
+      <p class="text-center fw-bold m-4">
         Copyright ©2022 All rights reserved | This template is made with
         <i class="bi bi-heart-fill"></i> by Colorlib
       </p>
