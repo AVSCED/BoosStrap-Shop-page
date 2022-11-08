@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" src="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <div class="container-fluid">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid px-4 px-lg-5">
+            <img src="./assets/download.webp" />
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <form clas="d-flex">
+                  <input
+                    type="text"
+                    placeholder="Search Book by Author or Publisher"
+                    style="
+                      border-radius: 5rem;
+                      width: 20rem;
+                      height: 2.5rem;
+                      margin-left: 2rem;
+                      border: 1px solid rgba(35, 47, 85, 0.15);
+                    "
+                  />
+                  <i
+                    class="bi bi-search inbox"
+                    style="margin-left: -2rem; color: red"
+                  ></i>
+                </form>
+              </ul>
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 align-content-end"
+                style="margin-left: 20rem"
+              >
+                <li>
+                  <a
+                    class="nav-link active text-muted"
+                    aria-current="page"
+                    href="#"
+                    >FAQ</a
+                  >
+                </li>
+                <li class="nav-item d-flex">
+                  <a
+                    class="nav-link active text-muted"
+                    aria-current="page"
+                    href="#"
+                    >Track Order</a
+                  >
+                  <i
+                    class="bi bi-cart"
+                    style="font-size: 2rem; margin-right: 0.5rem"
+                  ></i>
+                  <span
+                    class="badge bg-danger text-white"
+                    style="
+                      height: 1.1rem;
+                      border-radius: 15rem;
+                      margin-left: -1rem;
+                    "
+                    >0</span
+                  >
+                  <button
+                    class="btn btn-danger text-white"
+                    style="
+                      border-radius: 5rem;
+                      width: 8rem;
+                      margin-left: 0.5rem;
+                    "
+                    type="submit"
+                  >
+                    <b>Sign In</b>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="page_Content">
+      <!-- Secod Navbar -->
+      <ul class="nav justify-content-center fw-bold m-2 p-2">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" aria-current="page" href="#"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Contact</a>
+        </li>
+      </ul>
+      <!-- Page Content -->
+
+      <!-- First Carousel -->
+      <div class="container" style="width: 80%">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <input
+              type="radio"
+              style="height: 0.7rem"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            />
+            <input
+              type="radio"
+              style="height: 0.7rem"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            />
+            <input
+              type="radio"
+              style="height: 0.7rem"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            />
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/chicago.jpg" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block"
+                style="margin: 10rem"
+              >
+                <span
+                  class="btn bg-white text-dark text-muted p-1"
+                  style="border-radius: 5rem"
+                  >Science Fiction</span
+                >
+                <p class="fs-1">The History of Phipino</p>
+                <button
+                  class="btn btn-danger text-white"
+                  style="border-radius: 5rem"
+                  type="submit"
+                >
+                  <b>Browse Store</b>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/la.jpg" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block"
+                style="margin: 10rem"
+              >
+                <span
+                  class="btn bg-white text-dark text-muted p-1"
+                  style="border-radius: 5rem"
+                  >Science Fiction</span
+                >
+                <p class="fs-1">The History of Phipino</p>
+                <button
+                  class="btn btn-danger text-white"
+                  style="border-radius: 5rem"
+                  type="submit"
+                >
+                  <b>Browse Store</b>
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/ny.jpg" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-none d-md-block"
+                style="margin: 10rem"
+              >
+                <span
+                  class="btn bg-white text-dark text-muted p-1"
+                  style="border-radius: 5rem"
+                  >Science Fiction</span
+                >
+                <p class="fs-1">The History of Phipino</p>
+                <button
+                  class="btn btn-danger text-white"
+                  style="border-radius: 5rem"
+                  type="submit"
+                >
+                  <b>Browse Store</b>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Best Selling Books Section -->
+
+      <div class="container">
+        <p class="text-center fs-2 fw-bolder m-2 p-2">
+          Best Selling Books Ever
+        </p>
+        <div class="d-flex p-1">
+          <div class="card m-3" style="width: 16rem; border: none">
+            <img
+              src="./assets/image/images.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 22rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-5 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 16rem; border: none">
+            <img
+              src="./assets/image/images (1).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 22rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-5 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 16rem; border: none">
+            <img
+              src="./assets/image/images (2).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 22rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-5 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 16rem; border: none">
+            <img
+              src="./assets/image/download.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 22rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-5 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 16rem; border: none">
+            <img
+              src="./assets/image/download (1).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 22rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-5 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured this Week Section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-6">
+                <p class="fs-2 d-flex fw-bolder m-2 p-2">Featured This Week</p>
+              </div>
+              <div class="col-6">
+                <button
+                  class="btn text-dark px-lg-5 text-decoration-underline fs-5"
+                  style="outline: none; padding-top: 1.3rem; float: right"
+                  type="submit"
+                >
+                  <b>View All</b>
+                </button>
+              </div>
+            </div>
+
+            <div class="container bg-danger">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide p-4 m-2"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="carousel-item active">
+                        <img
+                          src="./assets/image/dragons.jpeg"
+                          class="d-block"
+                          style="width: 20rem; height: 26rem; margin-left: 5rem"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="carousel-caption">
+                        <span
+                          class="btn bg-white text-dark text-muted p-1"
+                          style="border-radius: 5rem"
+                          >Science Fiction</span
+                        >
+                        <p class="fs-1">The History of Phipino</p>
+                        <button
+                          class="btn btn-danger text-white"
+                          style="border-radius: 5rem"
+                          type="submit"
+                        >
+                          <b>Browse Store</b>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="carousel-item">
+                        <img
+                          src="./assets/image/dragons.jpeg"
+                          class="d-block"
+                          style="width: 20rem; height: 26rem; margin-left: 5rem"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="carousel-caption">
+                          <span
+                            class="btn bg-white text-dark text-muted p-1"
+                            style="border-radius: 5rem"
+                            >Science Fiction</span
+                          >
+                          <p class="fs-1">The History of Phipino</p>
+                          <button
+                            class="btn btn-danger text-white"
+                            style="border-radius: 5rem"
+                            type="submit"
+                          >
+                            <b>Browse Store</b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="container">
+              <div class="card m-1" style="width: 17rem; border: none">
+                <img
+                  src="./assets/image/featuredthisweek.webp"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 34rem"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Published Items -->
+      <div class="container" style="padding-top: 5rem">
+        <div class="row">
+          <div class="col-4">
+            <p class="fs-2 fw-bolder m-2 p-2">Latest Published Items.</p>
+          </div>
+          <div class="col-8">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 align-content-end"
+              style="float: right; padding-top: 1rem"
+            >
+              <li class="nav-item d-flex">
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  style="border-radius: 5rem; margin-right: 1rem"
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  style="border-radius: 5rem; margin-right: 1rem"
+                >
+                  Horror
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  style="border-radius: 5rem; margin-right: 1rem"
+                >
+                  Thriller
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  style="border-radius: 5rem; margin-right: 1rem"
+                >
+                  Science Fiction
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  style="border-radius: 5rem"
+                >
+                  History
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex p-1">
+          <div class="card m-3" style="width: 12rem">
+            <img
+              src="./assets/image/images.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 18rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-3 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 12rem">
+            <img
+              src="./assets/image/images (1).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 18rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-3 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 12rem">
+            <img
+              src="./assets/image/images (2).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 18rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-3 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 12rem">
+            <img
+              src="./assets/image/download.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 18rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-3 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 12rem">
+            <img
+              src="./assets/image/download (1).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 18rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-3 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+          <div class="card m-3" style="width: 12rem">
+            <img
+              src="./assets/image/download (1).jpeg"
+              class="card-img-top"
+              alt="..."
+              style="height: 18rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-2">Moon Dance</h5>
+              <p class="card-text text-muted">J.R.Rain</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex">
+                <div class="small text-warning mb-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <p class="card-text text-danger ms-4 fs-2 fw-bold">$50</p>
+              </div>
+              <p class="card-text text-muted" style="margin-top: -1.5rem">
+                (<span class="text-warning mb-4">120</span> review)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center fs-2 fw-bolder m-2 p-2">
+          <p>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              style="border-radius: 5rem; padding: 1rem"
+            >
+              Browse More
+            </button>
+          </p>
+        </div>
+      </div>
+      <!-- Bottom COntent -->
+      <div class="container mb-5">
+        <div class="row d-flex">
+          <div
+            class="col-md-6 bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+            style="
+              background-image: url('./assets/bottom/tree.jpg');
+              height: 15rem;
+              width: 48%;
+            "
+          >
+            <div class="row d-flex p-4">
+              <div class="col-6">
+                <p class="fs-3">The History of Phipino</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-5">
+                <button
+                  class="btn btn-danger"
+                  type="submit"
+                  style="border-radius: 5rem"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+            style="
+              background-image: url('./assets/bottom/wilma.jpg');
+              height: 15rem;
+              width: 48%;
+              margin-left: 3rem;
+            "
+          >
+            <div class="row d-flex p-4">
+              <div class="col-6">
+                <p class="fs-3">Wilma Mumdya</p>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-5">
+                <button
+                  class="btn btn-danger"
+                  type="submit"
+                  style="border-radius: 5rem"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter -->
+      <div
+        class="container bg-primary bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+        style="
+          padding-top: 6rem;
+          padding-bottom: 7rem;
+          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');
+        "
+      >
+        <div
+          class="row text-center"
+          style="padding-left: 20rem; padding-right: 20rem"
+        >
+          <h3>Join Newsletter</h3>
+          <p>
+            Lorem started its journey with cast iron (CI) products in 1980. The
+            initial main objective was to ensure pure water and affordable
+            irrigation.
+          </p>
+          <form clas="d-flex">
+            <input
+              type="text"
+              placeholder="Search Book by Author or Publisher"
+              style="
+                border-radius: 5rem;
+                width: 20rem;
+                height: 2.5rem;
+                margin-left: 2rem;
+                border: 1px solid rgba(35, 47, 85, 0.15);
+              "
+            />
+            <button
+              class="btn btn-danger"
+              type="submit"
+              style="border-radius: 5rem"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Footer -->
+
+      <div class="container" style="padding-top: 4rem">
+        <div class="row">
+          <div class="col-3">
+            <img src="./assets/download.webp" alt="" />
+            <p class="p-2 text-muted">
+              Get the breathing space now, and we’ll extend your term at the
+              other end year for go.
+            </p>
+
+            <p class="d-flex">
+              <i class="bi bi-facebook text-muted p-3"></i>
+              <i class="bi bi-instagram text-muted p-3"></i>
+              <i class="bi bi-linkedin text-muted p-3"></i>
+              <i class="bi bi-youtube text-muted p-3"></i>
+            </p>
+          </div>
+          <div class="col-3">
+            <p class="fs-5 fw-bold p-1">Book Categories</p>
+            <p class="text-muted fw-bold">History</p>
+            <p class="text-muted fw-bold">Horror Thriller</p>
+            <p class="text-muted fw-bold">Love Stories</p>
+            <p class="text-muted fw-bold">Science Fiction</p>
+            <p class="text-muted fw-bold">Business</p>
+          </div>
+          <div class="col-3">
+            <p class="p-3"></p>
+            <p class="text-muted fw-bold">Biography</p>
+            <p class="text-muted fw-bold">Astrology</p>
+            <p class="text-muted fw-bold">Digital Marketing</p>
+            <p class="text-muted fw-bold">Software Development</p>
+            <p class="text-muted fw-bold">Ecommerce</p>
+          </div>
+          <div class="col-3">
+            <p class="fs-5 fw-bold p-1">Site Map</p>
+            <p class="text-muted fw-bold">Home</p>
+            <p class="text-muted fw-bold">About Us</p>
+            <p class="text-muted fw-bold">FAQ's</p>
+            <p class="text-muted fw-bold">Blog</p>
+            <p class="text-muted fw-bold">Contact</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center m-5 p-5">
+        Copyright ©2022 All rights reserved | This template is made with
+        <i class="bi bi-heart-fill"></i> by Colorlib
+      </p>
+    </div>
+  </body>
+</html>
